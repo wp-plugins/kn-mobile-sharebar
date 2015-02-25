@@ -4,19 +4,23 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: share, facebook, whatsapp, sharebar, social, social share, social buttons, buttons, responsive, twitter
 Requires at least: 3.0.1
 Tested up to: 4.1.1
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv3
 
-Displays a floating share bar with WhatsApp, Twitter and Facebook on bottom of your wordpress self hosted website via mobile. 
+Displays a floating share bar with custom shared text on Facebook, Twitter and WhatsApp at bottom or top of your wordpress self hosted website via mobile.
 
 == Description ==
 
-* Displays a floating share bar with WhatsApp, Twitter and Facebook on bottom of your wordpress self hosted website via mobile.
+* Displays a floating share bar with custom shared text on Facebook, Twitter and WhatsApp at bottom or top of your wordpress self hosted website via mobile.
 
-= Post-Types =
-For this version, this plugin will only shown to your article post.
+= Available Post-Types =
+
+* Front page
+* Single post
+* All Pages
 
 = Demo - please view any article from this website with mobile =
+
 * My travel business website - `www.pakejtravel.com`
 * My personal website - `www.freddie.my`
 
@@ -24,9 +28,9 @@ For this version, this plugin will only shown to your article post.
 
 = Installation =
 
-1. Upload the `kn-mobile-sharebar` folder to the `/wp-content/plugins/` directory
-2. Activate the WordPress KN Mobile ShareBar plugin through the 'Plugins' menu in WordPress
-3. No configuration needed! Just install and try view one of your entry from your website with mobile!
+1. Upload the `kn-mobile-sharebar` folder to the `/wp-content/plugins/` directory.
+2. Activate the KN Mobile ShareBar plugin through the 'Plugins' menu in WordPress.
+3. Change KN Mobile Sharebar settings in admin panel and then continue view your site via mobile!
 
 = Updating =
 
@@ -34,9 +38,9 @@ If you had a trouble in updating this plugin, try deactive old version and delet
 
 == Frequently Asked Questions ==
 
-= Can I set a custom-sharetext for a single post? =
+= Can I customize text to share? =
 
-* Yes, sure! Try edit file `kn_mobile_sharebar.php` by yourself for this version.
+* Yes, sure! Check KN Mobile ShareBar setting in your admin panel. 
 
 = Can I ask another question? =
 
@@ -45,8 +49,14 @@ If you had a trouble in updating this plugin, try deactive old version and delet
 == Screenshots ==
 
 1. Demo in action
+2. Setting page
 
 == Changelog ==
+
+= 1.0.3 - 26 February 2014 =
+* New : You can choose to place the KN Mobile Sharebar location at bottom or top of the page.
+* New : Option to show or hide KN Mobile Sharebar at front page, every blog post or every page.
+* New : Twitter and WhatsApp text can be modified.
 
 = 1.0.2 - 25 February 2014 =
 * Fix : Sharebar size is too big! So, I make it smaller :)
