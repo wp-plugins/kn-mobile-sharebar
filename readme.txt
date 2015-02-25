@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: share, facebook, whatsapp, sharebar, social, social share, social buttons, buttons, responsive, twitter
 Requires at least: 3.0.1
 Tested up to: 4.1.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv3
 
 Displays a floating share bar with WhatsApp, Twitter and Facebook on bottom of your wordpress self hosted website via mobile. 
@@ -14,7 +14,7 @@ Displays a floating share bar with WhatsApp, Twitter and Facebook on bottom of y
 * Displays a floating share bar with WhatsApp, Twitter and Facebook on bottom of your wordpress self hosted website via mobile.
 
 = Post-Types =
-This plugin only shown to your article post only for this version.
+For this version, this plugin will only shown to your article post.
 
 = Demo - please view any article from this website with mobile =
 * My travel business website - `www.pakejtravel.com`
@@ -36,7 +36,7 @@ If you had a trouble in updating this plugin, try deactive old version and delet
 
 = Can I set a custom-sharetext for a single post? =
 
-* Yes, sure! Try edit file kn_mobile_sharebar.php by yourself for this version.
+* Yes, sure! Try edit file `kn_mobile_sharebar.php` by yourself for this version.
 
 = Can I ask another question? =
 
@@ -47,6 +47,9 @@ If you had a trouble in updating this plugin, try deactive old version and delet
 1. Demo in action
 
 == Changelog ==
+
+= 1.0.2 - 25 February 2014 =
+* Fix : Sharebar size is too big! So, I make it smaller :)
 
 = 1.0.1 - 25 February 2014 =
 * New : First release.
