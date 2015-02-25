@@ -3,7 +3,7 @@
 * Plugin Name: KN Mobile ShareBar
 * Plugin URI: http://www.kakinetwork.com
 * Description: Displays a floating share bar with custom shared text on Facebook, Twitter and WhatsApp at bottom or top of your wordpress self hosted website via mobile.
-* Version: 1.0.3
+* Version: 1.0.4
 * Author: Freddie Aziz Jasbindar
 * Author URI: http://www.facebook.com/FreddieAziz
 */

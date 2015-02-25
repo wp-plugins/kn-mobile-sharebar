@@ -101,6 +101,8 @@ ul#horizontal-list li {
 	height: 50px;
 }
 @media screen and (min-width: 980px) {
-    #mobile-share-box { display: none; }
-	#mobile-sharebar-footer { display: none; }
+    #mobile-share-boxtop { display: none; }
+	#mobile-sharebar-footertop { display: none; }
+    #mobile-share-boxbottom { display: none; }
+	#mobile-sharebar-footerbottom { display: none; }
 }
