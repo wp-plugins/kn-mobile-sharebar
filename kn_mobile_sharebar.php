@@ -3,7 +3,7 @@
 * Plugin Name: KN Mobile ShareBar
 * Plugin URI: http://www.kakinetwork.com
 * Description: Displays a floating share bar with custom shared text on Facebook, Twitter and WhatsApp at bottom or top of your website via mobile.
-* Version: 1.0.6
+* Version: 1.0.7
 * Author: Freddie Aziz Jasbindar
 * Author URI: http://www.facebook.com/FreddieAziz
 */
@@ -72,7 +72,7 @@ function mobile_sharebar_add(){
 		$facebook_text = do_shortcode( get_option( 'kn_mobile_sharebar_facebook' ) );
 		$twitter_text = do_shortcode( get_option( 'kn_mobile_sharebar_twitter' ) );
 		$whatsapp_text = do_shortcode( get_option( 'kn_mobile_sharebar_whatsapp' ) );
-		$whatsapp_text_fix = preg_replace('/[^\p{L}\p{N}\s]/u', '', $whatsapp_text);
+		$whatsapp_text_fix = preg_replace('#', '', $whatsapp_text);
 			
 		echo '
 		<div id="mobile-share-box'.get_option( 'kn_mobile_sharebar_where' ).'" style="height: '.get_option( 'kn_mobile_sharebar_height' ).'px;">
