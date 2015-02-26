@@ -9,20 +9,6 @@ function kn_post_title() {
     return get_the_title();
 }
 
-/* databases */
-function install_kn_mobile_sharebar() {
-	$kn_plugin="kn_mobile_sharebar";
-	add_option( $kn_plugin."_where", "bottom" );
-	add_option( $kn_plugin."_facebook", "[kn-post-url]" );
-	add_option( $kn_plugin."_twitter", "Let's read [kn-post-title] by click this [kn-post-url] !! :)" );
-	add_option( $kn_plugin."_whatsapp", "Hello my friend! :) I have something nice to share. It's about [kn-post-title]!! Read now by click this link [kn-post-url]" );
-	add_option( $kn_plugin."_visibility_homepage", "off" );
-	add_option( $kn_plugin."_visibility_post", "on" );
-	add_option( $kn_plugin."_visibility_page", "off" );
-	add_option( $kn_plugin."_height", "50" );
-	add_option( $kn_plugin."_small_desktop", "off" );
-}
-
 /* menus */
 if ( is_admin() ){
 	add_action('admin_menu', 'kn_mobile_sharebar_menu');
