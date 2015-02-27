@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: share, facebook, whatsapp, sharebar, social, social share, social buttons, buttons, responsive, twitter
 Requires at least: 3.0.1
 Tested up to: 4.1.1
-Stable tag: 1.0.8
+Stable tag: 1.0.9
 License: GPLv3
 
 Displays a floating share bar with custom shared text on Facebook, Twitter and WhatsApp at bottom or top of your website via mobile.
@@ -55,14 +55,16 @@ If you had a trouble in updating this plugin, try deactive old version and delet
 
 == Changelog ==
 
+= 1.0.9 - 26 February 2014 =
+* Fix : Repair whatsapp & twitter share error for same case.
+
 = 1.0.8 - 26 February 2014 =
 * New : Option to appear on small size desktop browser.
 * New : Option to change ShareBar height size.
 * New : Option to place ShareBar location at bottom or top of the page.
 * New : Option to show or hide ShareBar at front page, every blog post or every page.
 * New : Twitter and WhatsApp text can be modified.
-* Fix : Fix for some bug.
-* Fix : Fix for some share error case.
+* Fix : Repair whatsapp share error for same case.
 * Fix : Will not appear on small size desktop browser.
 
 = 1.0.1 - 25 February 2014 =

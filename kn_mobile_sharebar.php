@@ -3,7 +3,7 @@
 * Plugin Name: KN Mobile ShareBar
 * Plugin URI: http://www.kakinetwork.com
 * Description: Displays a floating share bar with custom shared text on Facebook, Twitter and WhatsApp at bottom or top of your website via mobile.
-* Version: 1.0.8
+* Version: 1.0.9
 * Author: Freddie Aziz Jasbindar
 * Author URI: http://www.facebook.com/FreddieAziz
 */
@@ -69,16 +69,31 @@ function mobile_sharebar_add(){
 	}
 	
 	if ( $visibility_homepage || $visibility_single || $visibility_page ) {
+
+		$replacements = array(
+			'#' => '',
+			'&' => 'and',
+			'?' => '',
+			';' => '',
+			'038' => '',
+			'and8220' => '',
+			'and8221' => '',
+			'and8211' => '',
+			'and8216' => '',
+			'and8217' => ''
+		);
+		
 		$facebook_text = do_shortcode( get_option( 'kn_mobile_sharebar_facebook' ) );
 		$twitter_text = do_shortcode( get_option( 'kn_mobile_sharebar_twitter' ) );
+		$twitter_text_fix = str_replace(array_keys($replacements), $replacements, $twitter_text);		
 		$whatsapp_text = do_shortcode( get_option( 'kn_mobile_sharebar_whatsapp' ) );
-		$whatsapp_text_fix = str_replace('#', '', $whatsapp_text);
+		$whatsapp_text_fix = str_replace(array_keys($replacements), $replacements, $whatsapp_text);
 			
 		echo '
 		<div id="mobile-share-box'.get_option( 'kn_mobile_sharebar_where' ).'" style="height: '.get_option( 'kn_mobile_sharebar_height' ).'px;">
 			<ul id="horizontal-list" style="height: '.get_option( 'kn_mobile_sharebar_height' ).'px;">
 				<li class="knfb" style="height: '.get_option( 'kn_mobile_sharebar_height' ).'px;"><a href="https://www.facebook.com/sharer/sharer.php?u='.$facebook_text.'" target="_blank" class="hyperlink" style="height: '.get_option( 'kn_mobile_sharebar_height' ).'px;">facebook</a></li>
-				<li class="kntw" style="height: '.get_option( 'kn_mobile_sharebar_height' ).'px;"><a href="https://twitter.com/intent/tweet?source=tweetbutton&amp;original_referer='.get_permalink()."&amp;text=".$twitter_text.'" target="_blank" class="hyperlink" style="height: '.get_option( 'kn_mobile_sharebar_height' ).'px;">twitter</a></li>
+				<li class="kntw" style="height: '.get_option( 'kn_mobile_sharebar_height' ).'px;"><a href="https://twitter.com/intent/tweet?source=tweetbutton&amp;original_referer='.get_permalink()."&amp;text=".$twitter_text_fix.'" target="_blank" class="hyperlink" style="height: '.get_option( 'kn_mobile_sharebar_height' ).'px;">twitter</a></li>
 				<li class="knws" style="height: '.get_option( 'kn_mobile_sharebar_height' ).'px;"><a href="whatsapp://send?text='.$whatsapp_text_fix.'" target="_blank" class="hyperlink" style="height: '.get_option( 'kn_mobile_sharebar_height' ).'px;">whatsapp</a></li>
 			</ul>
 		</div>
